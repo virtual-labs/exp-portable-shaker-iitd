@@ -1,20 +1,20 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Civil Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Virtual Smart Structures & Dynamics Laboratory
+<b> Experiment|     <b> 11. Forced Excitation of Steel Beam Using Portable Shaker 
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+This experiment aims to obtain the vibration response of a 3 m long beam using a portable dynamic shaker.
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dr. Suresh Bhalla 
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  IIT Delhi
+<b> Email id|     <b>  sbhalla@civil.iitd.ac.in 
+<b> Department |  Civil Engineering
 
 ### Contributors List
 
