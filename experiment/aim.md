@@ -1,1 +1,4 @@
-### Aim of the experiment
+#### This experiment aims to obtain the vibration response of a 3 m long beam using a portable dynamic shaker. 
+Unlike experiment 1 which deals with free vibration response, this experiment deals with forced vibration
+response.
+Using external shaker, the excitation can be effectively controlled. Modes otherwise missed out during impact excitation may be specifically excited.
