@@ -4,7 +4,7 @@ The experimental setup is as shown in Fig. 1. It consists of a standard beam ISM
 
 The beam is excited into forced vibrations using a harmonic sweep signal in the frequency range 10-50 Hz over a time period of 20 seconds. As the beam vibrates, the surface strain fluctuates between compression and tension, thereby developing sinusoidally varying charge (and hence voltage) across the electrodes of the PZT sensor through the direct piezoelectric effect to learn more about piezoelectricity. The instantaneous voltage developed across the piezoelectric sensor can be measured at the user specified time interval using the DMM. The VEE PRO based interactive dialogue box available in the main page of the experiment can be used for this purpose. A sampling rate of 1 milli second and a total sampling time of 15 s (total 15, 000 measurements) is recommended for best results. The dialogue box stores the time and the frequency domain data in the computer of the user. Plots are also available in the VEE PRO dialogue box.
 
-<img src="images/th1.jpg" height="400px">
+<img src="images/th1.png" height="400px">
 
 Fig. 1 Experimental set up 
 
@@ -19,7 +19,7 @@ This command will produce a matrix of voltage values in the frequency domain. Th
 where N is the total number of samples in the time domain (here 10, 000) and T the sampling interval (here
 0.001 second). It may be noted that the VEE PRO dialogue box also provides the matrix V_fft. The user may use it directly if MATLAB is not available. Fig. 2 shows typical time and frequency domain responses expected if the experiment is correctly performed.
 
-<img src="images/th4.png" height="70px">
+<img src="images/th4.png" height="250px">
  
 Fig. 2 Expected sensor response (a) Time domain (b) Frequency domain
 
@@ -30,4 +30,5 @@ The user may compare the values obtained through this experiment with the dampin
 
 <img src="images/th5.png" height="70px">
  
+
 Where E denotes the Young’s modulus of elasticity of the beam, ρ the material density, A the cross sectional area, I the moment of inertia and L the length of the beam.
