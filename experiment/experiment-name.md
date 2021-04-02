@@ -1,1 +1,1 @@
-## Experiment name
+##  Forced Excitation of Steel Beam Using Portable Shaker
