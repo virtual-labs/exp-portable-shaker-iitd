@@ -838,6 +838,8 @@ document.getElementById("graph2").style.visibility="visible";
 document.getElementById("transwhite").style.visibility="visible";
 document.getElementById("note1").style.visibility="visible";
 document.getElementById("arrow_note").style.visibility="visible";
+document.getElementById("arrow_note_dwld").style.visibility="visible";
+
 document.getElementById("nextButton13").style.visibility="visible";
 document.getElementById("arrow13").style.visibility="visible";
 document.getElementById("select_abc").style.visibility="hidden";	
