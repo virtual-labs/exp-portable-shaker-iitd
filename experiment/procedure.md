@@ -1,12 +1,12 @@
 ### These steps will be followed for the experiment
 
-**PRE EXPERIMENT QUIZ QUESTIONS**
+<!-- **PRE EXPERIMENT QUIZ QUESTIONS**
 	
 1) What is sweep signal?
 2) What is time domain analysis?
 3) What is frequency domain analysis?
 4) What is the mathematical formula for natural frequency?
-5) What is the range of sweep signal used in the experiment?
+5) What is the range of sweep signal used in the experiment? -->
 
 #### Preparation of specimens:
 
@@ -111,7 +111,7 @@
 <img src="images/pr25.png"/>
 
 
-**POST EXPERIMENT QUIZ QUESTIONS**
+<!-- **POST EXPERIMENT QUIZ QUESTIONS**
 
 1) Plot the time domain data in excel to visualize the free damped
 oscillations.
@@ -121,4 +121,4 @@ identify the natural frequency of the beam.
 
 3) Calculate the damping ratio using half power band method.
 4) Compare the values of damping ratio obtained experimentally and
-theoretically.
+theoretically. -->
