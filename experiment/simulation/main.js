@@ -27,6 +27,11 @@ document.getElementById("canvas2").style.visibility="hidden";
 
 document.getElementById("canvas3").style.visibility="visible";
 
+setTimeout(function()
+{
+	graph_show()
+},1000);
+
 }
 
 function navNext3()
@@ -455,7 +460,8 @@ document.getElementById("step16").style.visibility="hidden";
 document.getElementById("step17").style.visibility="visible";
 
 }
-
+// $("#smoke1").fadeOut(1000);
+// $("#smoke2").fadeIn(1000);
 function soldring()
 {
 document.getElementById("tb_soldrod").style.visibility="hidden";
@@ -466,14 +472,26 @@ document.getElementById("handrod_wire").style.visibility="visible";
 document.getElementById("handrod_wire").style.animation="soldring 2s forwards";
 document.getElementById("silverhand_canvas1").style.visibility="visible";
 document.getElementById("silverhand_canvas1").style.animation="silverhand_canvas1 2.2s forwards";
+
+setTimeout(function()
+{
+$("#smoke1").fadeIn(1000);
+},1200);
+
 setTimeout(function()
 {
 document.getElementById("soldering_image1").style.visibility="visible";
+$("#smoke1").fadeOut(1000);
+setTimeout(function()
+{
+$("#smoke2").fadeIn(1000);
+},1200);
 document.getElementById("handrod_wire").style.animation="soldring_red 2s forwards";
 document.getElementById("silverhand_canvas1").style.animation="silverhand_canvas1_red 2s forwards";
 setTimeout(function()
 {
 document.getElementById("soldering_image2").style.visibility="visible";
+$("#smoke2").fadeOut(1000);
 document.getElementById("handrod_wire").style.animation="soldring_back 2s forwards";
 document.getElementById("silverhand_canvas1").style.animation="silverhand_canvas1_back 2s forwards";
 setTimeout(function()
@@ -834,7 +852,13 @@ if (t1=="frm1" && f1=="frm2")
 {
 
 document.getElementById("graph1").style.visibility="visible";
+
+document.getElementById("graph_up1").style.animation="graph_up1 10s forwards";
+
 document.getElementById("graph2").style.visibility="visible";
+
+document.getElementById("graph_up2").style.animation="graph_up1 10s forwards";
+
 document.getElementById("transwhite").style.visibility="visible";
 document.getElementById("note1").style.visibility="visible";
 document.getElementById("arrow_note").style.visibility="visible";
