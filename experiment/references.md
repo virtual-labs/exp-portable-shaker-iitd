@@ -8,4 +8,4 @@ of Intelligent Material Systems and Structures, Vol. 11, No. 4. pp. 246-257.
 
 4. <a href="images/piezo.pdf">Literature on piezoelectric materials.</a>
 
-5. For manual <a href="images/manual_exp3.pdf" target="_blank">click here</a>
+5. Refer manual of experiment <a href="images/manual_exp3.pdf" target="_blank">click here</a>
