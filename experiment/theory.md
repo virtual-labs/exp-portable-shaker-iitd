@@ -29,7 +29,7 @@ From the frequency plot, the user can identify the natural frequency of the beam
 
 <center><img src="images/th5.png" height="70px"></center>
 
-where f<sub>n</sub> is the frequency corresponding to peak response and f<sub>1</sub> and f<sub>2</sub> represent the frequencies corresponding to 0.707 of the peak response (f<sub>2</sub> > f<sub>n</sub> > f<sub>1</sub>).<br>
+where &#402;<sub>n</sub> is the frequency corresponding to peak response and &#402;<sub>1</sub> and &#402;<sub>2</sub> represent the frequencies corresponding to 0.707 of the peak response (&#402;<sub>2</sub> > &#402;<sub>n</sub> > &#402;<sub>1</sub>).<br>
 The user may compare the values obtained through this experiment with the damping ratio available from the literature and also the theoretical frequency given by (Paz, 2004).
 
 <center><img src="images/th6.png" height="70px"></center>
