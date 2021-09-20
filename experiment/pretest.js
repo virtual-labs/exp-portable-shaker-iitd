@@ -98,7 +98,7 @@
             },
             correctAnswer: "c" ///// Write the correct option inside double quotes
         },
-/*
+
         {
             question: "2. What are the recognized ages of the test specimen at the time of the test in days as per IS:5816?", ///// Write the question inside double quotes
             answers: {
@@ -142,7 +142,7 @@
             },
             correctAnswer: "c" ///// Write the correct option inside double quotes
         },
-
+/*
         {
             question: "6. What is the apparatus required for the determination of split tensile strength of hardened concrete?", ///// Write the question inside double quotes
             answers: {
