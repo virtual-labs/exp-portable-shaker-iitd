@@ -122,14 +122,14 @@
         },
                          
         {
-            question: "4. What is the orientation of failure plane in split tensile test assuming that the compressive load on the specimen is applied vertically?", ///// Write the question inside double quotes
+            question: "4. The damping ratio can be calculated using the", ///// Write the question inside double quotes
             answers: {
-                a: "Horizontal", ///// Write the option 1 inside double quotes
-                b: "Vertical", ///// Write the option 2 inside double quotes
-                c: "20' from Vertical", ///// Write the option 1 inside double quotes
-                d: "45' from Vertical", ///// Write the option 2 inside double quotes
+                a: "Time domain", ///// Write the option 1 inside double quotes
+                b: "Corresponding matrix of frequencies", ///// Write the option 2 inside double quotes
+                c: "Matrix of voltage values", ///// Write the option 1 inside double quotes
+                d: "Half power band method", ///// Write the option 2 inside double quotes
             },
-            correctAnswer: "b" ///// Write the correct option inside double quotes
+            correctAnswer: "d" ///// Write the correct option inside double quotes
         },
                          
         {
