@@ -122,12 +122,12 @@
         },
 
         {
-            question: "4. What is the minimum number of specimens needed for the test as per IS:5815?", ///// Write the question inside double quotes
+            question: "4. The beam is excited using", ///// Write the question inside double quotes
             answers: {
-                a: "4", ///// Write the option 1 inside double quotes
-                b: "3", ///// Write the option 2 inside double quotes
-                c: "5", ///// Write the option 1 inside double quotes
-                d: "6", ///// Write the option 2 inside double quotes
+                a: "Function generator", ///// Write the option 1 inside double quotes
+                b: "Shaker", ///// Write the option 2 inside double quotes
+                c: "Digital multi meter", ///// Write the option 1 inside double quotes
+                d: "PZT Patch", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "b" ///// Write the correct option inside double quotes
         },
