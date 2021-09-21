@@ -111,14 +111,14 @@
         },
 
         {
-            question: "3. Which of the following is allowed dimensions of cylindrical specimen for the split tensile test as per IS:5816? [ Diameter x Length]", ///// Write the question inside double quotes
+            question: "3. The wires from the patch are connected to", ///// Write the question inside double quotes
             answers: {
-                a: "15cm x 30cm", ///// Write the option 1 inside double quotes
-                b: "20cm x 45cm", ///// Write the option 2 inside double quotes
-                c: "10cm x 20cm", ///// Write the option 1 inside double quotes
-                d: "15cm x 35cm", ///// Write the option 2 inside double quotes
+                a: "Beam", ///// Write the option 1 inside double quotes
+                b: "Function generator", ///// Write the option 2 inside double quotes
+                c: "Shaker", ///// Write the option 1 inside double quotes
+                d: "Digital multi meter", ///// Write the option 2 inside double quotes
             },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+            correctAnswer: "d" ///// Write the correct option inside double quotes
         },
 
         {
