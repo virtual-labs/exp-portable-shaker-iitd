@@ -100,12 +100,12 @@
         },
 
         {
-            question: "2. What are the recognized ages of the test specimen at the time of the test in days as per IS:5816?", ///// Write the question inside double quotes
+            question: "2. The beam vibrates, the surface strain fluctuates between _____ and _____", ///// Write the question inside double quotes
             answers: {
-                a: "7,28", ///// Write the option 1 inside double quotes
-                b: "7,31", ///// Write the option 2 inside double quotes
-                c: "10,29", ///// Write the option 1 inside double quotes
-                d: "9,30", ///// Write the option 2 inside double quotes
+                a: "Compression & tension", ///// Write the option 1 inside double quotes
+                b: "Voltage & time", ///// Write the option 2 inside double quotes
+                c: "Tension & frequency", ///// Write the option 1 inside double quotes
+                d: "Corresponding matrix & frequency domain", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
