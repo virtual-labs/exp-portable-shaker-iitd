@@ -98,7 +98,7 @@
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
-/*
+
         {
             question: "2. The split tensile strength of the cylindrical concrete specimen is given by?", ///// Write the question inside double quotes
             answers: {
@@ -120,7 +120,29 @@
             },
             correctAnswer: "b" ///// Write the correct option inside double quotes
         },
-*/
+                         
+        {
+            question: "4. What is the orientation of failure plane in split tensile test assuming that the compressive load on the specimen is applied vertically?", ///// Write the question inside double quotes
+            answers: {
+                a: "Horizontal", ///// Write the option 1 inside double quotes
+                b: "Vertical", ///// Write the option 2 inside double quotes
+                c: "20' from Vertical", ///// Write the option 1 inside double quotes
+                d: "45' from Vertical", ///// Write the option 2 inside double quotes
+            },
+            correctAnswer: "b" ///// Write the correct option inside double quotes
+        },
+                         
+        {
+            question: "5. What is the orientation of failure plane in split tensile test assuming that the compressive load on the specimen is applied vertically?", ///// Write the question inside double quotes
+            answers: {
+                a: "Horizontal", ///// Write the option 1 inside double quotes
+                b: "Vertical", ///// Write the option 2 inside double quotes
+                c: "20' from Vertical", ///// Write the option 1 inside double quotes
+                d: "45' from Vertical", ///// Write the option 2 inside double quotes
+            },
+            correctAnswer: "b" ///// Write the correct option inside double quotes
+        },
+
          
 
          
