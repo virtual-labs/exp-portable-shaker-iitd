@@ -89,7 +89,7 @@
 
 
     const myQuestions = [{
-            question: "1. The beam is excited into forced vibrations using a?", ///// Write the question inside double quotes
+            question: "1. The beam is excited into forced vibrations using ?", ///// Write the question inside double quotes
             answers: {
                 a: "Harmonic sweep signal ", ///// Write the option 1 inside double quotes
                 b: "Sinusoidal signal", ///// Write the option 2 inside double quotes
