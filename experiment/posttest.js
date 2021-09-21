@@ -133,12 +133,12 @@
         },
                          
         {
-            question: "5. What is the orientation of failure plane in split tensile test assuming that the compressive load on the specimen is applied vertically?", ///// Write the question inside double quotes
+            question: "5. From the frequency plot, the user can identify the natural frequency of the", ///// Write the question inside double quotes
             answers: {
-                a: "Horizontal", ///// Write the option 1 inside double quotes
-                b: "Vertical", ///// Write the option 2 inside double quotes
-                c: "20' from Vertical", ///// Write the option 1 inside double quotes
-                d: "45' from Vertical", ///// Write the option 2 inside double quotes
+                a: "Shaker", ///// Write the option 1 inside double quotes
+                b: "Beam", ///// Write the option 2 inside double quotes
+                c: "PZT Patch", ///// Write the option 1 inside double quotes
+                d: "Function generator", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "b" ///// Write the correct option inside double quotes
         },
