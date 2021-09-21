@@ -89,12 +89,12 @@
 
 
     const myQuestions = [{
-            question: "1. First Question Here", ///// Write the question inside double quotes
+            question: "1. The beam is excited into forced vibrations using a?", ///// Write the question inside double quotes
             answers: {
-                a: "Answer 1", ///// Write the option 1 inside double quotes
-                b: "Answer 2", ///// Write the option 2 inside double quotes
-                c: "Answer 3", ///// Write the option 1 inside double quotes
-                d: "Answer 4", ///// Write the option 2 inside double quotes
+                a: "Harmonic sweep signal ", ///// Write the option 1 inside double quotes
+                b: "Sinusoidal signal", ///// Write the option 2 inside double quotes
+                c: "Matrix of voltage", ///// Write the option 1 inside double quotes
+                d: "Damping ratio", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
