@@ -100,7 +100,7 @@
         },
 
         {
-            question: "2. The beam vibrates, the surface strain fluctuates between _____ and _____", ///// Write the question inside double quotes
+            question: "2. The beam vibrates, the surface strain fluctuates between", ///// Write the question inside double quotes
             answers: {
                 a: "Compression & tension", ///// Write the option 1 inside double quotes
                 b: "Voltage & time", ///// Write the option 2 inside double quotes
