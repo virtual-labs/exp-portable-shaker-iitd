@@ -34,4 +34,4 @@ The user may compare the values obtained through this experiment with the dampin
 
 <center><img src="images/th6.png" height="70px"></center>
 
-where <i>E</i> denotes the Young’s modulus of elasticity of the beam, <i>ρ</i> the material density, <i>A</i> the cross sectional area, <i>I</i> the moment of inertia and <i>L</i> the length of the beam.
+where <i>E</i> denotes the Young’s modulus of elasticity of the beam, <i>ρ</i> the material density, <i>A</i> the cross sectional area, I the moment of inertia and <i>L</i> the length of the beam.
