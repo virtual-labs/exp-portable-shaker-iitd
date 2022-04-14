@@ -411,10 +411,10 @@
 <strong> Step-1: </strong> (f) Click on add button to bring steel beam.</span>
 
 <span id="step7" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
-<strong> Step-1: </strong> (g) Click on add button to bring bond.</span>
+<strong> Step-1: </strong> (g) Click on add button to bring epoxy.</span>
 
 <span id="step8" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
-<strong> Step-1: </strong> (h) Click on brush to apply bond on the steel beam.</span>
+<strong> Step-1: </strong> (h) Click on brush to apply epoxy on the steel beam.</span>
 
 <span id="step9" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
 <strong> Step-1: </strong> (i) Click on add button to bring PZT patch.</span>
@@ -423,7 +423,7 @@
 <strong> Step-1: </strong> (j) Click on PZT patch to fix it on the steel beam.</span>
 
 <span id="step11" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
-<strong> Step-1: </strong> (k) Click on bond to send it back.</span>
+<strong> Step-1: </strong> (k) Click on epoxy to send it back.</span>
 
 <span id="step12" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
 <strong> Step-1: </strong> (l) Click on add button to bring wires.</span>
@@ -679,6 +679,24 @@
   border: 3px solid red;
   border-radius: 165px;
   visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/smokeeff.png"  id="smoke1" style=
+" position: absolute;
+  left: 215px;
+  top: 70px;
+  height: 135px;
+  display: none;
+
+"draggable="false"/>
+
+<img src="images/smokeeff.png"  id="smoke2" style=
+" position: absolute;
+    left: 260px;
+    top: 70px;
+    height: 135px;
+    display: none;
 
 "draggable="false"/>
 
@@ -1488,7 +1506,7 @@ left: 107px;
 <!-- //////////////////////////////////// -->
 
  <span id="step1" style="visibility: ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
-<strong> Step-3: </strong> Select time & no. of samples and click on submit button.</span>
+<strong> Step-3: </strong> Click on download data button.</span>
 
 
 </div> 
@@ -1500,8 +1518,9 @@ left: 107px;
 position: absolute;
 left: 120px;
 top: 109px;
+width: 100px;
     ">
-<option value="">---Select Option---</option>
+<!-- <option value="">---Select Option---</option> -->
 <option value="frm1"> 1ms </option>
 </select>
 
@@ -1512,14 +1531,15 @@ top: 109px;
 position: absolute;
 left: 490px;
 top: 109px;
+width: 100px;
     ">
-<option value="">---Select Option---</option>
+<!-- <option value="">---Select Option---</option> -->
 <option value="frm2"> 5000 Hz </option>
 </select>
 
 <span id="select_abc" style="visibility:hidden; position: absolute; left: 665px; top: 141px; font-size: 17px; color: red;"><strong> Select first</strong> </span>
 
-<button id="btn_submit" style=" position: absolute; left: 645px; top: 105px; height: 25px; width: 130px;  background-color: steelblue;color: white; visibility: ;" onclick="graph_show()">Submit</button>
+<!-- <button id="btn_submit" style=" position: absolute; left: 645px; top: 105px; height: 25px; width: 130px;  background-color: steelblue;color: white; visibility: ;" onclick="graph_show()">Submit</button> -->
 
 <div id="transwhite" style=" position: absolute;
     left: 25px;
@@ -1529,22 +1549,32 @@ top: 109px;
 
  <img src="images/time.png"  id="graph1" style=
 "   position: absolute;
-    left: 23px;
-    top: 50px;
-    height: 185px;
+    left: 370px;
+    top: 10px;
+    height: 230px;
     visibility:hidden;
 "draggable="false"/>
 
  <img src="images/frequancy.png"  id="graph2" style=
 "   position: absolute;
-    left: 378px;
-    top: 50px;
-    height: 185px;
+    left: 0px;
+    top: 10px;
+    height: 230px;
     visibility:hidden;
 "draggable="false"/>
+
+<div id="graph1_up" style="overflow: hidden; border: 2px solid #000; position: absolute; left: 423px; top: 16px; height: 182px; width: 312px;">
+   <img src="images/time_up.png"  id="graph_up1" style="position: absolute; left: 0px; top: 0px;
+     height: 175.3px; width: 310px; visibility: ;" draggable="false"/>
 </div>
 
-<i class="fa fa-hand-o-right "   id="arrow_note" style="position: absolute;
+<div id="graph2_up" style="overflow: hidden; border: 2px solid #000; position: absolute; left: 51px; top: 18px; height: 180px; width: 302px;">
+   <img src="images/frequancy_up.png"  id="graph_up2" style="position: absolute; left: 0px; top: 4.2px; height: 169.2px; width: 310px; visibility: ;" draggable="false"/>
+</div>
+
+</div>
+
+<i class="fa fa-hand-o-right" id="arrow_note" style="position: absolute;
   left: 56px;
   top: 410px;
   font-size: 25px;
@@ -1611,31 +1641,23 @@ top: 109px;
     height: 391px;
     width: 749px; border: 2px solid #FF6600; visibility: ;">
 
-<img src="images/formula.png"  id="" style=
+<img src="images/formulanf.png"  id="" style=
 "   position: absolute;
-    left: 255px;
-    top: 60px;
-    height: 30px;
+    left: 275px;
+    top: 40px;
+    height: 70px;
     visibility:;
 "draggable="false"/>
 
-<span id="" style="visibility: ; position: absolute; left: 240px; top: 132px; font-size: 17px;"> (refer manual of experiment)</span>
+<span id="" style="visibility: ; position: absolute; left: 240px; top: 132px; font-size: 17px;"> (Refer manual of experiment in reference tab)</span>
 
 <span id="" style="visibility: ; position: absolute; left: 65px; top: 185px; font-size: 17px;"> Compare the calculated theoretical frequency with the frequency obtained through <br>this experiment.</span>
 
 </div>
 
-<div id=""  style="
-  position: absolute;
-      left: 125px;
-    top: 355px;
-  height: 40px;
-  width: 500px;
-  text-align: center;
-  background-color: rgb(193 193 193);
-  font-weight: bold;
-  color: black;
-  padding-top: 10px; visibility: ;">Thank you for performing the experiment</div>
+<div id=" "  style=" position: absolute; left: 75px; top: 340px; height: 70px; width: 600px; text-align: center; background-color: rgb(193 193 193); font-weight: bold; color: black; padding-top: 10px; display:  ; "> Thankyou for performing the experiment<br>
+If you want to perform experiment in real trigger mode <a class="blink_me" style="color: red; font-size: 20px;" href="http://ssdl.iitd.ac.in/vssdl/exp3.html" target="_blank">Click here</a>
+</div>
 
  <button id="btn_restart" style=" position: absolute; left: 585px;
     top: 425px; height: 30px; width: 130px;  background-color: steelblue;color: white; visibility: ;" onclick="reset()">Restart</button>

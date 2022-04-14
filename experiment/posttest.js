@@ -89,38 +89,60 @@
 
 
     const myQuestions = [{
-            question: "1. First Question Here", ///// Write the question inside double quotes
+            question: "1. The beam is excited into forced vibrations using ?", ///// Write the question inside double quotes
             answers: {
-                a: "Answer 1", ///// Write the option 1 inside double quotes
-                b: "Answer 2", ///// Write the option 2 inside double quotes
-                c: "Answer 3", ///// Write the option 1 inside double quotes
-                d: "Answer 4", ///// Write the option 2 inside double quotes
-            },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
-        },
-/*
-        {
-            question: "2. The split tensile strength of the cylindrical concrete specimen is given by?", ///// Write the question inside double quotes
-            answers: {
-                a: "<img src='images/post5.png'/>", ///// Write the option 1 inside double quotes
-                b: "<img src='images/post6.png'/>", ///// Write the option 2 inside double quotes
-                c: "<img src='images/post7.png'/>", ///// Write the option 1 inside double quotes
-                d: "<img src='images/post8.png'/>", ///// Write the option 2 inside double quotes
+                a: "Harmonic sweep signal ", ///// Write the option 1 inside double quotes
+                b: "Sinusoidal signal", ///// Write the option 2 inside double quotes
+                c: "Matrix of voltage", ///// Write the option 1 inside double quotes
+                d: "Damping ratio", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
         {
-            question: "3. What is the orientation of failure plane in split tensile test assuming that the compressive load on the specimen is applied vertically?", ///// Write the question inside double quotes
+            question: "2. The instantaneous voltage developed across the piezoelectric sensor can be measured at the user specified time interval using the ?", ///// Write the question inside double quotes
             answers: {
-                a: "Horizontal", ///// Write the option 1 inside double quotes
-                b: "Vertical", ///// Write the option 2 inside double quotes
-                c: "20' from Vertical", ///// Write the option 1 inside double quotes
-                d: "45' from Vertical", ///// Write the option 2 inside double quotes
+                a: "Beam", ///// Write the option 1 inside double quotes
+                b: "PZT Patch", ///// Write the option 2 inside double quotes
+                c: "Digital multi meter", ///// Write the option 1 inside double quotes
+                d: "Function generator,", ///// Write the option 2 inside double quotes
+            },
+            correctAnswer: "c" ///// Write the correct option inside double quotes
+        },
+
+        {
+            question: "3. Fast Fourier Transform, the user can convert the time domain data in the", ///// Write the question inside double quotes
+            answers: {
+                a: "Damping ratio", ///// Write the option 1 inside double quotes
+                b: "Frequency domain", ///// Write the option 2 inside double quotes
+                c: "Corresponding frequencies", ///// Write the option 1 inside double quotes
+                d: "Theoretical frequency", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "b" ///// Write the correct option inside double quotes
         },
-*/
+                         
+        {
+            question: "4. The damping ratio can be calculated using the", ///// Write the question inside double quotes
+            answers: {
+                a: "Time domain", ///// Write the option 1 inside double quotes
+                b: "Corresponding matrix of frequencies", ///// Write the option 2 inside double quotes
+                c: "Matrix of voltage values", ///// Write the option 1 inside double quotes
+                d: "Half power band method", ///// Write the option 2 inside double quotes
+            },
+            correctAnswer: "d" ///// Write the correct option inside double quotes
+        },
+                         
+        {
+            question: "5. From the frequency plot, the user can identify the natural frequency of the", ///// Write the question inside double quotes
+            answers: {
+                a: "Shaker", ///// Write the option 1 inside double quotes
+                b: "Beam", ///// Write the option 2 inside double quotes
+                c: "PZT Patch", ///// Write the option 1 inside double quotes
+                d: "Function generator", ///// Write the option 2 inside double quotes
+            },
+            correctAnswer: "b" ///// Write the correct option inside double quotes
+        },
+
          
 
          
