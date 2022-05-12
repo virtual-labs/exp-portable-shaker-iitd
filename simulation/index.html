@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experiment 3</title>
+    
+
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="jquerymin.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- <script src="https://kit.fontawesome.com/afa6483c49.js" crossorigin="anonymous"></script> -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"type="text/css">
+      <link href="bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="iitstyle.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- Graph Script link start-->
+	<script language="javascript" type="text/javascript" src="t/excanvas.js"></script>
+	<script language="javascript" type="text/javascript" src="t/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="t/jquery.flot.js"></script>
+<!-- Graph Script link close -->
+    <script>
+
+        var simsubscreennum=0;
+
+        var temp=0;
+
+    </script>
+
+
+
+
+
+</head>
+
+<body style="margin:0; font-family: verdana;" >
+<table align="center">
+<tr><td>
+    <div id="simscreen" style="overflow: hidden;">
+
+        <div id="title"><h3>Forced Excitation of Steel Beam Using Portable Shaker</h3></div>
+
+
+
+
+<!-- Scene 0 -->
+
+
+
+<div class="simsubscreen" id="canvas0" style="visibility: visible; width: 700px;margin-right: 50px;margin-left: 50px;" ></br>
+
+<div id="transis" style="
+    width: 700px;
+    height: 190px;
+    margin-right: 27px;
+    margin-left: 1px;
+    background-color: #ffffffc9;
+    border: 2px solid #ff6600;">
+
+            <p class="incanvas" style="font-size:16px;"><strong>Objective:</strong></p>
+            <p class="incanvas" style="font-size:15px;">To obtain the vibration response of a 3 m long beam using a portable dynamic shaker.</p>
+
+             <p class="incanvas" style="font-size:15px;"><strong>Apparatus Used:</strong></p>
+            <p class="incanvas" style="font-size:15px; float:left;"><strong>1.</strong> Digital multimeter</p>
+            
+            <p class="incanvas" style="font-size:15px;  float:left; margin-left:15px;"><strong>2.</strong> Concrete blocks </p>
+
+            <p class="incanvas" style="font-size:15px; float:left; margin-left:15px;"><strong>3.</strong> Steel beam</p>
+
+            <p class="incanvas" style="font-size:15px;float:left; margin-left:15px; "><strong>4.</strong> PZT patch</p>
+
+            <p class="incanvas" style="font-size:15px; float:left; margin-left:15px;"><strong>5.</strong> Portable shaker </p>
+
+            <p class="incanvas" style="font-size:15px; float:left; margin-left:15px;"><strong>6.</strong> Amplifier </p>
+
+            <p class="incanvas" style="font-size:15px; float:left; margin-left:15px;"><strong>7.</strong> Function generator </p>
+            
+            
+<br><br><br>
+</div>  
+
+
+<!-- <img src="images/man.png"  id="" style=
+"   position: absolute;
+    left: 593px;
+    top: 85px;
+    height: 370px;
+
+"draggable="false"/> -->
+
+<!-- <img src="images/aluminium_cantilever.png"  id="" style=
+"   position: absolute;
+    left: 215px;
+    top: 500px;
+    width: 301px;
+    height: 35px;
+
+"draggable="false"/> -->
+
+<img src="images/shaker.png"  id="" style=
+"   position: absolute;
+    left: 15px;
+    top: 410px;
+    height: 137px;
+
+"draggable="false"/>
+
+<img src="images/pzt.png"  id="" style=
+"   position: absolute;
+        left: 613px;
+    top: 422px;
+    height: 25px;
+    width: 105px;
+    "draggable="false"/>
+
+<img src="images/amplifire.png"  id="" style=
+"   position: absolute;
+    left: 354px;
+    top: 441px;
+    height: 90px;
+
+"draggable="false"/>
+
+<img src="images/lcrmeter.png"  id="" style=
+"   position: absolute;
+    left: 0px;
+    top: 246px;
+    height: 135px;
+
+"draggable="false"/>
+
+<img src="images/genrator.png"  id="" style=
+"   position: absolute;
+        left: 158px;
+    top: 423px;
+    height: 120px;
+
+"draggable="false"/>
+
+<img src="images/beam.png"  id="" style=
+"   position: absolute;
+    left: 230px;
+    top: 285px;
+    height: 80px;
+"draggable="false"/>
+
+<img src="images/leftblock.png"  id="" style=
+"   position: absolute;
+        left: 520px;
+    top: 246px;
+    height: 135px;
+"draggable="false"/>
+
+<img src="images/rightblock.png"  id="" style=
+"   position: absolute;
+    left: 605px;
+    top: 246px;
+    height: 135px;
+
+"draggable="false"/>
+
+
+<span id="" style=
+"   position: absolute;
+        left: 50px;
+    top: 228px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+" > Digital multimeter</span>
+
+<span id="" style=
+"   position: absolute;
+        left: 550px;
+    top: 220px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+" > Concrete blocks</span>
+
+<span id="" style=
+"   position: absolute;
+        left: 323px;
+    top: 251px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+" > Steel beam</span>
+
+<span id="" style=
+"   position: absolute;
+        left: 630px;
+    top: 392px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+" > PZT patch</span>
+
+<span id="" style=
+"   position: absolute;
+        left: 20px;
+    top: 385px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+" > Portable shaker</span> 
+
+<span id="" style=
+"   position: absolute;
+        left: 417px;
+    top: 405px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+" > Amplifier</span>
+
+<span id="" style=
+"   position: absolute;
+        left: 180px;
+    top: 385px;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+" > Function generator</span> 
+
+ <!--Blinking arrowcubox  -->
+
+<span class="blink_me" id="arrowcubox" style="position:absolute; font-size: 30px;left: 565px; top: 495px;  color: #2150a0;visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="nextButton10" style="position:absolute; left: 605px; top: 500px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Start Experiment&nbsp;" onclick="navNext0()"/>
+
+</div>
+
+
+
+
+<!-- Scene 1 -->
+
+
+
+<div class="simsubscreen" id="canvas1" style="visibility: hidden; background: url(images/bg.jpg);" ></br>
+
+
+<div id="" style="width: 750px;
+    height: 41px;
+    margin-left: 23px;
+    position: absolute;
+    top: 26px;
+    border: 2px solid #ff6600;
+    font-size: 17px;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: rgb(255, 255, 255, 0.6);"> 
+
+ <!-- Block Button============================================ -->
+
+    <span class="blink_me" id="arw1" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addblocks" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_blocks()"/>
+
+ <!-- Shaker Button============================================ -->
+
+    <span class="blink_me" id="arw3" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addshaker" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_shaker()"/>
+
+<!-- Beam Button============================================ -->
+
+    <span class="blink_me" id="arw4" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addbeam" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_beam()"/>
+
+<!-- Bond Button============================================ -->
+
+    <span class="blink_me" id="arw5" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addbond" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_bond()"/>
+
+<!-- PZT Button============================================ -->
+
+    <span class="blink_me" id="arw6" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addpzt" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_pzt()"/>
+
+<!-- Wires Button============================================ -->
+
+    <span class="blink_me" id="arw7" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addwires" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_wires()"/>
+
+<!-- Soldrod Button============================================ -->
+
+    <span class="blink_me" id="arw8" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addsoldrod" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_soldrod()"/>
+
+<!-- //////////////////////////////////// -->
+
+<span id="step1" style="visibility: ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (a) Click on add button to bring concrete blocks.</span>
+
+<span id="step2" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (b) Click on concrete block to place it on the position.</span>
+
+<span id="step3" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (c) Click on another concrete block to place it on the position.</span>
+
+<span id="step4" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (d) Click on add button to bring portable shaker.</span>
+
+<span id="step5" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (e) Click on portable shaker to place it on the position.</span>
+
+<span id="step6" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (f) Click on add button to bring steel beam.</span>
+
+<span id="step7" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (g) Click on add button to bring epoxy.</span>
+
+<span id="step8" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (h) Click on brush to apply epoxy on the steel beam.</span>
+
+<span id="step9" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (i) Click on add button to bring PZT patch.</span>
+
+<span id="step10" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (j) Click on PZT patch to fix it on the steel beam.</span>
+
+<span id="step11" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (k) Click on epoxy to send it back.</span>
+
+<span id="step12" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (l) Click on add button to bring wires.</span>
+
+<span id="step13" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (m) Click on add button to bring soldering iron.</span>
+
+<span id="step14" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (n) Click on black wire to place it on the PZT patch.</span>
+
+<span id="step15" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (o) Click on red wire to place it on the PZT patch.</span>
+
+<span id="step16" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (p) Click on PZT patch for zoom view.</span>
+
+<span id="step17" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-1: </strong> (q) Click on soldering iron for soldering.</span>
+
+</div> 
+
+<img src="images/shaker_wire.png"  id="shaker_wire" style=
+" position: absolute;
+  left: 875px;
+  top: 396px;
+  height: 79px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/leftblock.png"  id="leftblock2" style=
+" position: absolute;
+  left: 25px;
+  top: 280px;
+  height: 160px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/rightblock.png"  id="rightblock2" style=
+" position: absolute;
+  left: 390px;
+  top: 280px;
+  height: 160px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/leftblock_hand.png"  id="leftblock_hand" style=
+" position: absolute;
+  left: 600px;
+  top: 370px;
+  height: 160px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/rightblock_hand.png"  id="rightblock_hand" style=
+" position: absolute;
+  left: 706px;
+  top: 370px;
+  height: 160px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/leftblock.png"  id="leftblock" style=
+" position: absolute;
+  left: 520px;
+  top: 370px;
+  height: 160px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/rightblock.png"  id="rightblock" style=
+" position: absolute;
+  left: 626px;
+  top: 370px;
+  height: 160px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/shaker.png"  id="shaker3" style=
+" position: absolute;
+      left: 205px;
+    top: 296px;
+  height: 135px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/shaker.png"  id="shaker2" style=
+" position: absolute;
+  left:550px;
+  top: 392px;
+  height: 135px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/shaker_hand.png"  id="shaker" style=
+" position: absolute;
+  left:800px;
+  top: 392px;
+  height: 135px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/beam.png"  id="beam" style=
+" position: absolute;
+  left: -7px;
+  top: 230px;
+  height: 85px;
+  width: 537px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/greaseeffect.png"  id="greaseeffect" style=
+" position: absolute;
+  left: 235px;
+  top: 244px;
+  height: 9px;
+  width: 10px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/beam_hand.png"  id="beam_hand" style=
+" position: absolute;
+  left: 900px;
+  top: 130px;
+  height: 85px;
+  width: 537px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/bond.png"  id="bond" style=
+" position: absolute;
+  left: 720px;
+  top: 385px;
+  height: 85px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/brushfill.png"  id="brushfill" style=
+" position: absolute;
+  left: 730px;
+  top: 330px;
+  height: 109px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/brush.png"  id="brush" style=
+" position: absolute;
+  left: 610px;
+  top: 332px;
+  height: 109px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/brushfill_hand.png"  id="brushfill_hand" style=
+" position: absolute;
+  left: 609px;
+  top: 316px;
+  height: 124px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/brush_hand.png"  id="brush_hand" style=
+" position: absolute;
+  left: 278px;
+  top: 138px;
+  height: 117px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/pzt.png"  id="pzt" style=
+" position: absolute;
+  left: 740px;
+  top: 408px;
+  height: 15px;
+  width: 58px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/pzt_black.png"  id="pzt_black" style=
+" position: absolute;
+      left: 827px;
+    top: 435px;
+    height: 90px;
+    transform: rotate(
+-134deg
+);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/pzt_red.png"  id="pzt_red" style=
+" position: absolute;
+  left: 832px;
+  top: 440px;
+  height: 97px;
+  transform: rotate(-134deg);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/rod_wire.png"  id="rod_wire" style=
+" position: absolute;
+  left: 791px;
+  top: 232px;
+  height: 147px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+
+<img src="images/soldrod.png"  id="soldrod" style=
+" position: absolute;
+  left: 712px;
+  top: 233px;
+  height: 147px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+
+<img src="images/soldstand.png"  id="soldstand" style=
+" position: absolute;
+  left: 704px;
+  top: 304px;
+  height: 110px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/zoom.png"  id="zoom_img" style=
+" position: absolute;
+  left: 98px;
+  top: 110px;
+  height: 330px;
+  border: 3px solid red;
+  border-radius: 165px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/smokeeff.png"  id="smoke1" style=
+" position: absolute;
+  left: 215px;
+  top: 70px;
+  height: 135px;
+  display: none;
+
+"draggable="false"/>
+
+<img src="images/smokeeff.png"  id="smoke2" style=
+" position: absolute;
+    left: 260px;
+    top: 70px;
+    height: 135px;
+    display: none;
+
+"draggable="false"/>
+
+<img src="images/soldering_image.png"  id="soldering_image1" style=
+" position: absolute;
+    left: 310px;
+    top: 198px;
+    height: 6px;
+  visibility:hidden;
+"draggable="false"/>
+<img src="images/soldering_image.png"  id="soldering_image2" style=
+" position: absolute;
+    left: 353px;
+    top: 199px;
+    height: 6px;
+  visibility:hidden;
+"draggable="false"/>
+<img src="images/soldering_image.png"  id="soldering_image3" style=
+" position: absolute;
+    left: 267px;
+    top: 239px;
+    height: 5px;
+  visibility:hidden;
+"draggable="false"/>
+<img src="images/soldering_image.png"  id="soldering_image4" style=
+" position: absolute;
+    left: 290px;
+    top: 240px;
+    height: 4px;
+  visibility:hidden;
+"draggable="false"/>
+<img src="images/handrod_wire.png"  id="handrod_wire" style=
+" position: absolute;
+  left: 558px;
+  top: 231px;
+  height: 151px;
+  visibility:hidden;
+"draggable="false"/>
+<img src="images/silverhand.png"  id="silverhand_canvas1" style=
+" position: absolute;
+left: 107px;
+  top: 194px;
+  height: 101px;
+  transform: rotate(-16deg);
+  visibility:hidden;
+"draggable="false"/>
+
+<img src="images/transbox.png"  id="tb_block1" style=
+" position: absolute;
+  left: 532px;
+  top: 370px;
+  height: 160px;
+  width: 79px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="block1_fix()" />
+
+<img src="images/transbox.png"  id="tb_block2" style=
+" position: absolute;
+  left: 635px;
+  top: 370px;
+  height: 160px;
+  width: 79px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="block2_fix()" />
+
+<img src="images/transbox.png"  id="tb_shaker" style=
+" position: absolute;
+  left: 550px;
+  top: 391px;
+  height: 130px;
+  width: 112px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="shaker_fix()" />
+
+<img src="images/transbox.png"  id="tb_brushfill" style=
+" position: absolute;
+  left: 626px;
+  top: 336px;
+  height: 109px;
+  width: 37px;
+  transform: rotate(30deg);
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="bond_apply()" />
+
+<img src="images/transbox.png"  id="tb_pzt" style=
+" position: absolute;
+  left: 677px;
+  top: 404px;
+  height: 22px;
+  width: 64px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="pzt_fix()" />
+
+<img src="images/transbox.png"  id="tb_bond" style=
+" position: absolute;
+  left: 597px;
+  top: 344px;
+  height: 132px;
+  width: 85px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="bond_back()" />
+
+<img src="images/transbox.png"  id="tb_pztblack" style=
+" position: absolute;
+  left: 497px;
+  top: 475px;
+  height: 30px;
+  width: 143px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="pztblack_fix()" />
+
+<img src="images/transbox.png"  id="tb_pztred" style=
+" position: absolute;
+  left: 497px;
+  top: 475px;
+  height: 30px;
+  width: 143px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="pztred_fix()" />
+
+<img src="images/transbox.png"  id="tb_zoom" style=
+" position: absolute;
+  left: 230px;
+  top: 232px;
+  height: 26px;
+  width: 72px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="zoomview()" />
+
+<img src="images/transbox.png"  id="tb_soldrod" style=
+" position: absolute;
+  left: 582px;
+  top: 230px;
+  height: 167px;
+  width: 42px;
+  transform: rotate(30deg);
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="soldring()" />
+
+
+<span class="blink_me" id="arwtb_block1" style="position:absolute; font-size: 30px; left: 555px; top: 325px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_block2" style="position:absolute; font-size: 30px; left: 655px; top: 325px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_shaker" style="position:absolute; font-size: 30px; left: 590px; top: 335px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_brushfill" style="position:absolute; font-size: 30px; left: 655px;
+    top: 300px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_pzt" style="position:absolute; font-size: 30px; left: 693px;
+    top: 355px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_bond" style="position:absolute; font-size: 30px; left: 623px;
+    top: 335px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_pztblack" style="position:absolute; font-size: 30px; left: 555px;
+    top: 425px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_pztred" style="position:absolute; font-size: 30px; left: 555px;
+    top: 440px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_zoom" style="position:absolute; font-size: 30px; left: 250px;
+    top: 190px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtb_soldrod" style="position:absolute; font-size: 30px; left: 620px;
+    top: 190px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+
+<span class="blink_me" id="arrow11" style="position:absolute; font-size: 30px; left:695px; top:498px; color: steelblue; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<i class="fa fa-hand-o-right" id="nextButton11" style="color: steelblue; position:absolute; left:740px; top:500px; font-size: 35px; visibility:hidden;" onclick="navNext1()"></i>
+
+
+</div> 
+
+
+
+
+<!-- Scene 2 -->
+
+
+
+<div class="simsubscreen" id="canvas2" style="visibility: hidden; background: url(images/bg.jpg);" ></br>
+
+
+<div id="" style="width: 750px;
+    height: 41px;
+    margin-left: 23px;
+    position: absolute;
+    top: 26px;
+    border: 2px solid #ff6600;
+    font-size: 17px;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: rgb(255, 255, 255, 0.6);"> 
+
+ <!-- LCR Button============================================ -->
+
+    <span class="blink_me" id="arw2_1" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addlcr" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_lcr()"/>
+
+<!-- AMPLI Button============================================ -->
+
+    <span class="blink_me" id="arw2_2" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addampli" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_ampli()"/>
+
+<!-- GEN Button============================================ -->
+
+    <span class="blink_me" id="arw2_3" style="
+    position: absolute;
+    font-size: 30px;
+    left: 631px;
+    top: -2px;visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<input type="button" id="addgen" style="position: absolute;
+    left: 668px;
+    top: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px;
+    background-color: #2150a0;
+    visibility: hidden;
+    color: white;" value="&nbsp;Add&nbsp;" onclick="add_gen()"/>
+
+<!-- //////////////////////////////////// -->
+
+<span id="step2_1" style="visibility: ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (a) Click on add button to bring digital multimeter.</span>
+
+<span id="step2_2" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (b) Click on add button to bring amplifier.</span>
+
+<span id="step2_3" style="visibility:hidden ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (c) Click on add button to bring function generator.</span>
+
+<span id="step2_4" style="visibility: hidden; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (d) Click on yellow wire of amplifier to attach it with the function generator.</span>
+
+<span id="step2_5" style="visibility:hidden ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (e) Click on red wire of amplifier to attach it with the portable shaker.</span>
+
+<span id="step2_6" style="visibility:hidden ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (f) Click on black clip to attach wire with PZT wire.</span>
+
+<span id="step2_7" style="visibility:hidden ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (g) Click on red clip to attach wire with PZT wire.</span>
+
+<span id="step2_8" style="visibility:hidden ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (h) Switch on the power button of digital multimeter.</span>
+
+<span id="step2_9" style="visibility:hidden ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-2: </strong> (i) Switch on the power button of function generator.</span>
+
+
+
+</div> 
+
+<img src="images/shaker_wire.png"  id="" style=
+" position: absolute;
+  left: 280px;
+  top: 300px;
+  height: 79px;
+  visibility:;
+
+"draggable="false"/>
+
+<img src="images/lcr_wire.png"  id="lcr_wire" style=
+" position: absolute;
+  left: 902px;
+  top: 482px;
+  height: 90px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/ampli_wire.png"  id="ampli_wire" style=
+" position: absolute;
+  left: 934px;
+  top: 486px;
+  height: 24px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/leftblock.png"  id="" style=
+" position: absolute;
+  left: 25px;
+  top: 280px;
+  height: 160px;
+  visibility:;
+
+"draggable="false"/>
+
+<img src="images/rightblock.png"  id="" style=
+" position: absolute;
+  left: 390px;
+  top: 280px;
+  height: 160px;
+  visibility:;
+
+"draggable="false"/>
+
+<img src="images/beam.png"  id="" style=
+" position: absolute;
+  left: -7px;
+  top: 230px;
+  height: 85px;
+  width: 537px;
+  visibility:;
+
+"draggable="false"/>
+
+<img src="images/vibrate.png"  id="vib1" style=
+" position: absolute;
+  left: 0px;
+    top: 235px;
+    height: 35px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/vibrate2.png"  id="vib2" style=
+" position: absolute;
+  left: 485px;
+    top: 232px;
+    height: 35px;
+    /*transform: rotate(
+-80deg
+);*/
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/shaker.png"  id="can2shakar" style=
+" position: absolute;
+  left: 205px;
+  top: 296px;
+  height: 135px;
+  visibility:;
+
+"draggable="false"/>
+<img src="images/shakerwr.png"  id="can2shakarwr" style=
+" position: absolute;
+  left: 205px;
+  top: 296px;
+  height: 135px;
+  visibility:hidden;
+
+"draggable="false"/>
+<img src="images/shakerrodonly.png"  id="can2rodonly" style=
+" position: absolute;
+  left: 258px;
+    top: 295px;
+    height: 26px;
+  visibility:hidden;
+
+"draggable="false"/>
+<img src="images/greaseeffect.png"  id="" style=
+" position: absolute;
+  left: 235px;
+  top: 244px;
+  height: 9px;
+  width: 60px;
+  visibility:;
+
+"draggable="false"/>
+
+<img src="images/pzt.png"  id="" style=
+" position: absolute;
+  left: 237px;
+  top: 237px;
+  height: 15px;
+  width: 58px;
+  visibility:;
+
+"draggable="false"/>
+
+<div id="line_black" style="position: absolute;
+    top: 414px;
+    height: 1px;
+    left: 170px;
+    width: 2px;
+    visibility:hidden;
+  background-color: rgb(31 28 29);"></div>
+
+<div id="line_red"style="position: absolute;
+     left: 189px;
+    top: 377px;
+    height: 35px;
+    width: 2px;
+    transform: rotate( 
+16deg
+ );
+  visibility:hidden;
+  background-color: #EC3237;"></div>
+
+  <img src="images/blackclipclose.png"  id="blackclipclose2" style=
+" position: absolute;
+  left: 160px;
+  top: 338px;
+  height: 30px;
+  transform: rotate(121deg);
+  visibility:hidden;
+
+"draggable="false"/>
+
+
+
+<img src="images/pzt_black.png"  id="" style=
+" position: absolute;
+  left: 184px;
+  top: 241px;
+  height: 90px;
+  visibility:;
+
+"draggable="false"/>
+
+<img src="images/pzt_red.png"  id="" style=
+" position: absolute;
+  left: 209px;
+  top: 242px;
+  height: 97px;
+  visibility:;
+
+"draggable="false"/>
+
+<img src="images/soldering_image.png"  id="" style=
+" position: absolute;
+    left: 267px;
+    top: 239px;
+    height: 5px;
+  visibility:;
+"draggable="false"/>
+<img src="images/soldering_image.png"  id="" style=
+" position: absolute;
+    left: 290px;
+    top: 240px;
+    height: 4px;
+  visibility:;
+"draggable="false"/>
+
+<img src="images/lcrmeter.png"  id="lcrmeter" style=
+" position: absolute;
+  left: 730px;
+  top: 430px;
+  height: 130px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+
+
+<img src="images/lcr_black.png"  id="lcr_black" style=
+" position: absolute;
+  left: 175px;
+    top: 409px;
+    height: 90px;
+    transform: rotate(
+-12deg
+);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/lcr_red.png"  id="lcr_red" style=
+" position: absolute;
+  left: 884px;
+  top: 409px;
+  height: 82px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+
+
+
+<img src="images/redclipclose.png"  id="redclipclose" style=
+" position: absolute;
+  left: 876px;
+  top: 380px;
+  height: 30px;
+  transform: rotate(124deg);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/blackclipopen.png"  id="blackclipopen" style=
+" position: absolute;
+  top: 339px;left: 157px;
+    height: 30px;
+    transform: rotate(
+110deg
+);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/redclipopen.png"  id="redclipopen" style=
+" position: absolute;
+  top: 330px; left: 189px;
+    height: 30px;
+    transform: rotate(
+110deg
+);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/blackclipclose.png"  id="blackclipclose" style=
+" position: absolute;
+  left: 852px;
+    top: 378px;
+    height: 30px;
+    transform: rotate(
+110deg
+);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/off_screen.png"  id="off_screen" style=
+" position: absolute;
+  left: 774px;
+  top: 481px;
+  height: 16px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+
+<img src="images/function_wire.png"  id="function_wire" style=
+" position: absolute;
+  left: 915px;
+  top: 271px;
+  height: 24px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/genrator.png"  id="genrator" style=
+" position: absolute;
+  left: 739px;
+  top: 261px;
+  height: 145px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/gen_ampli.png"  id="gen_ampli" style=
+" position: absolute;
+  left: 559px;
+  top: 371px;
+  height: 143px;
+  transform: rotate(-8deg);
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/yellow_circle.png"  id="yellow_circle" style=
+" position: absolute;
+  left: 780px;
+  top: 363px;
+  height: 17px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/shak_ampli.png"  id="shak_ampli" style=
+" position: absolute;
+  left: 472px;
+  top: 416px;
+  height: 61px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/red_circle.png"  id="red_circle" style=
+" position: absolute;
+  left: 463px;
+  top: 436px;
+  height: 17px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/amplifire.png"  id="amplifire" style=
+" position: absolute;
+  left: 740px;
+  top: 420px;
+  height: 102px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/transbox.png"  id="tb_blackclip" style=
+" position: absolute;
+  left: 165px;
+  top: 366px;
+  height: 52px;
+  width: 27px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="black_clipattach()" />
+
+<img src="images/redclipclose.png"  id="redclipclose2" style=
+" position: absolute;
+  top: 330px; left: 189px;
+  height: 30px;
+  transform: rotate(124deg);
+  visibility:hidden;
+
+"draggable="false"/>
+<span class="blink_me" id="arwtb_blackclip" style="position:absolute; font-size: 30px;     left: 158px;
+    top: 330px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+
+<img src="images/off_screen2.png"  id="off_screen2" style=
+" position: absolute;
+  left: 563px;
+    top: 283px;
+    height: 32px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<img src="images/off_screen3.png"  id="off_screen3" style=
+" position: absolute;
+  left: 710px;
+    top: 454px;
+    height: 18px;
+  visibility:hidden;
+
+"draggable="false"/>
+
+<!-- ///////////////////////////////////// -->
+
+
+
+<div id="yellow_color_wire" style="
+    position: absolute;
+    left: 587px;
+    top: 370px;
+    height: 19px;
+    width: 5px;
+    transform: rotate(17deg); 
+    background-color: #f9ca00; visibility: hidden;"> </div>
+<div id="red_color_wire" style="
+    position: absolute;
+    left: 272px;
+    top: 443px;
+    height: 4px;
+    width: 4px;
+    transform: rotate(-7deg);
+    background-color:#db2117; visibility: hidden;"> </div>
+
+<img src="images/transbox.png"  id="trans_yellow_color_wire" style=
+"   position: absolute;
+    left: 573px;
+    top: 357px;
+    height: 74px;
+    width: 27px;
+    transform: rotate(15deg);
+    visibility:hidden;
+    border: 0px solid red;
+"draggable="false", onclick="yellow_color_wire()" />
+
+<img src="images/transbox.png"  id="trans_red_color_wire" style=
+"   position: absolute;
+    left: 260px;
+    top: 427px;
+    height: 34px;
+    width: 27px;
+    visibility:hidden;
+    border: 0px solid red;
+"draggable="false", onclick="red_color_wire()" />
+<!-- ///////////////////////////////////////////// -->
+<img src="images/transbox.png"  id="tb_redclip" style=
+" position: absolute;
+  left: 183px;
+  top: 366px;
+  height: 52px;
+  width: 27px;
+  visibility:hidden;
+  border:0px solid red;
+
+"draggable="false", onclick="red_clipattach()" />
+
+
+<span class="blink_me" id="arwtb_redclip" style="position:absolute; font-size: 30px;     left: 185px;
+    top: 330px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+<span class="blink_me" id="arwtrans_yellow_color_wire" style="position:absolute; font-size: 30px; left: 550px; top: 349px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<span class="blink_me" id="arwtrans_red_color_wire" style="position:absolute; font-size: 30px; left: 230px;  top: 425px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+
+<img src="images/transbox.png"  id="tb_lcron" style=
+" position: absolute;
+  left: 43px;
+    top: 504px;
+    height: 26px;
+    width: 27px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="lcr_on()" />
+
+
+<span class="blink_me" id="arwtb_lcron" style="position:absolute; font-size: 30px; left: 16px;
+    top: 496px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+
+<img src="images/transbox.png"  id="tb_genron" style=
+" position: absolute;
+  left: 557px;
+    top: 315px;
+    height: 26px;
+    width: 27px;
+  visibility:hidden;
+  border: 0px solid red;
+
+"draggable="false", onclick="genr_on()" />
+
+
+<span class="blink_me" id="arwtb_genron" style="position:absolute; font-size: 30px; left: 526px;
+    top: 306px; color: blue; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<span class="blink_me" id="arrow12" style="position:absolute; font-size: 30px; left:695px; top:498px; color: steelblue; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+ <i class="fa fa-hand-o-right" id="nextButton12" style="color: steelblue; position:absolute; left:740px; top:500px; font-size: 35px; visibility:hidden;" onclick="navNext2()"></i>
+
+
+</div> 
+
+
+
+
+<!-- Scene 3 -->
+
+
+
+<div class="simsubscreen" id="canvas3" style="visibility: hidden; background: url(images/bg.jpg);" ></br>
+
+
+
+<div id="" style="width: 750px;
+    height: 41px;
+    margin-left: 23px;
+    position: absolute;
+    top: 26px;
+    border: 2px solid #ff6600;
+    font-size: 17px;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: rgb(255, 255, 255, 0.6);"> 
+
+
+
+<!-- //////////////////////////////////// -->
+
+ <span id="step1" style="visibility: ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-3: </strong> Click on download data button.</span>
+
+
+</div> 
+
+<span id="" style="visibility: ; position: absolute; left: 35px; top: 106px; font-size: 17px;">
+<strong> Time:</strong> </span>
+
+<select name="val1" id="val1"  style="
+position: absolute;
+left: 120px;
+top: 109px;
+width: 100px;
+    ">
+<!-- <option value="">---Select Option---</option> -->
+<option value="frm1"> 1ms </option>
+</select>
+
+<span id="" style="visibility: ; position: absolute; left: 340px; top: 106px; font-size: 17px;">
+<strong> No. of samples:</strong> </span>
+
+<select name="val2" id="val2"  style="
+position: absolute;
+left: 490px;
+top: 109px;
+width: 100px;
+    ">
+<!-- <option value="">---Select Option---</option> -->
+<option value="frm2"> 5000 Hz </option>
+</select>
+
+<span id="select_abc" style="visibility:hidden; position: absolute; left: 665px; top: 141px; font-size: 17px; color: red;"><strong> Select first</strong> </span>
+
+<!-- <button id="btn_submit" style=" position: absolute; left: 645px; top: 105px; height: 25px; width: 130px;  background-color: steelblue;color: white; visibility: ;" onclick="graph_show()">Submit</button> -->
+
+<div id="transwhite" style=" position: absolute;
+    left: 25px;
+    top: 148px;
+    height: 391px;
+    width: 749px; border: 2px solid #FF6600; visibility: hidden;">
+
+ <img src="images/time.png"  id="graph1" style=
+"   position: absolute;
+    left: 370px;
+    top: 10px;
+    height: 230px;
+    visibility:hidden;
+"draggable="false"/>
+
+ <img src="images/frequancy.png"  id="graph2" style=
+"   position: absolute;
+    left: 0px;
+    top: 10px;
+    height: 230px;
+    visibility:hidden;
+"draggable="false"/>
+
+<div id="graph1_up" style="overflow: hidden; border: 2px solid #000; position: absolute; left: 423px; top: 16px; height: 182px; width: 312px;">
+   <img src="images/time_up.png"  id="graph_up1" style="position: absolute; left: 0px; top: 0px;
+     height: 180.3px; width: 310px; visibility: ;" draggable="false"/>
+</div>
+
+<div id="graph2_up" style="overflow: hidden; border: 2px solid #000; position: absolute; left: 51px; top: 18px; height: 180px; width: 302px;">
+   <img src="images/frequancy_up.png"  id="graph_up2" style="position: absolute; left: 0px; top: 4.2px; height: 169.2px; width: 310px; visibility: ;" draggable="false"/>
+</div>
+
+</div>
+
+<i class="fa fa-hand-o-right" id="arrow_note" style="position: absolute;
+  left: 56px;
+  top: 410px;
+  font-size: 25px;
+  color: blue;
+  visibility:hidden;" ></i>
+
+<div id="note1"  style="
+  position: absolute;
+  left: 100px;
+  top: 405px;
+  height: 40px;
+  width: 650px;
+  text-align: center;
+  background-color: rgb(193 193 193);
+  font-weight: bold;
+  color: black;
+  padding-top: 10px; visibility: hidden;">Note:--Notice the highest peak in the graph and note it as the natural frequency.</div>
+
+
+<span class="blink_me" id="arrow13" style="position:absolute; font-size: 30px; left:690px; top:490px; color: steelblue; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+ <i class="fa fa-hand-o-right" id="nextButton13" style="color: steelblue; position:absolute; left:730px; top:490px; font-size: 35px; visibility:hidden;" onclick="navNext3()"></i>
+
+<a href="images/Experiment 3.xlsx"><button id="arrow_note_dwld" style=" position: absolute; left: 365px; top: 475px; height: 25px; width: 130px;  background-color: steelblue;color: white; visibility: hidden;">Download data</button></a>
+
+
+</div> 
+
+
+<!-- Scene 4 -->
+
+
+
+<div class="simsubscreen" id="canvas4" style="visibility: hidden; background: url(images/bg.jpg);" ></br>
+
+
+
+<div id="" style="width: 750px;
+    height: 41px;
+    margin-left: 23px;
+    position: absolute;
+    top: 26px;
+    border: 2px solid #ff6600;
+    font-size: 17px;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: rgb(255, 255, 255, 0.6);"> 
+
+
+
+<!-- //////////////////////////////////// -->
+
+ <span id="step1" style="visibility: ; position: absolute; left: 10px; top: 8px; font-size: 17px;">
+<strong> Step-4: </strong> Calculate the natural frequency theoretically</span>
+
+
+<!-- </div>  -->
+
+
+<div id="transwhite" style=" position: absolute;
+    left: -2px;
+    top: 87px;
+    height: 391px;
+    width: 749px; border: 2px solid #FF6600; visibility: ;">
+
+<img src="images/formulanf.png"  id="" style=
+"   position: absolute;
+    left: 285px;
+    top: 20px;
+    height: 90px;
+    visibility:;
+"draggable="false"/>
+
+<span id="" style="visibility: ; position: absolute; left: 240px; top: 132px; font-size: 17px;"> (Refer manual of experiment in reference tab)</span>
+
+<span id="" style="visibility: ; position: absolute; left: 65px; top: 185px; font-size: 17px;"> Compare the calculated theoretical frequency with the frequency obtained through <br>this experiment.</span>
+
+</div>
+
+<div id=" "  style=" position: absolute; left: 75px; top: 340px; height: 70px; width: 600px; text-align: center; background-color: rgb(193 193 193); font-weight: bold; color: black; padding-top: 10px; display:  ; "> Thankyou for performing the experiment<br>
+If you want to perform experiment in real trigger mode <a class="blink_me" style="color: red; font-size: 20px;" href="http://ssdl.iitd.ac.in/vssdl/exp3.html" target="_blank">Click here</a>
+</div>
+
+ <button id="btn_restart" style=" position: absolute; left: 585px;
+    top: 425px; height: 30px; width: 130px;  background-color: steelblue;color: white; visibility: ;" onclick="reset()">Restart</button>
+
+<span class="blink_me" id="arwbtn_restart" style="position:absolute; font-size: 30px;     left: 545px;
+    top: 418px; color: blue; visibility:;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+<span class="blink_me" id="arrow14" style="position:absolute; font-size: 30px; left:695px; top:498px; color: black; visibility:hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+ <i class="fa fa-hand-o-right" id="nextButton14" style="color: black; position:absolute; left:740px; top:500px; font-size: 35px; visibility:hidden;" onclick="navNext4()"></i>
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--- First Div---->
+</td></tr>
+</table>
+<script src="../assets/js/iframeResize.js"></script></body>
+</html>
